@@ -1,0 +1,61 @@
+/*
+* Browsers: last 5 version
+*/
+
+/* circle_section */
+
+.circle_section {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.circle_section-container {
+    max-width: 65%;
+}
+
+.circle_section__heading {
+    margin-right: 3rem;
+    max-width: 50%;
+    float: left;
+    color: var(--color-pink);
+    shape-outside: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    line-height: 2;
+}
+
+.circle_section__text {
+    line-height: 2;
+}
+
+@media (max-width: 1700px) {
+    .circle_section-container {
+        max-width: 80%;
+    }     
+}
+
+@media (max-width: 1290px) {
+    .circle_section__heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .circle_section {
+        margin-bottom: 5rem;
+    }
+
+    .circle_section-container {
+        max-width: 100%;
+    }    
+}
+
+@media (max-width: 680px) {
+
+    .circle_section__heading {
+        float: none;
+        font-size: 1.5rem;
+    }
+
+    .circle_section__text {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сальдогрупп - развитие вашего бизнеса</title>
+    <link rel="stylesheet" href=" https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <div class="header__logo_container">
+                <img class="header__logo_img" src="img/saldogroup_logo.png" alt="Логотип Сальдогрупп">
+                <p class="header__logo_text">ООО Сальдогрупп</p>
+            </div>   
+            <div class="header__lang__select">
+                <span class="lang-switcher lang-switcher--ru" id="switcher-ru">Русский</span>
+                <span class="lang-switcher lang-switcher--en" id="switcher-en">English</span>
+            </div>
+            <button class="header_section__nav-btn" id="burger-btn" aria-label="меню"></button>
+            <div class="header__burger_nav_container" id="burger">
+                <nav class="header__burger__nav">
+                    <ul class="burger__nav__list">
+                        <li class="burger__nav__list_item">
+                            <a href="#about" class="burger__nav__list_item-link">О компании</a>
+                        </li>
+                        <li class="burger__nav__list_item">
+                            <a href="#services" class="burger__nav__list_item-link">Услуги</a>
+                        </li>
+                        <li class="burger__nav__list_item">
+                            <a href="#contacts" class="burger__nav__list_item-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <form class="header__burger__search_form" action="#" aria-labelledby="site-search2">
+                        <input type="search" id="site-search2" name="search" class="header__burger__search-input">
+                        <button class="header__burger__search-btn" aria-label="Поиск по сайту"></button>
+                    </form>
+                    <form class="header__burger__form-small" action="#" aria-labelledby="site-search3">
+                        <input type="search" id="site-search3" name="search" class="burger__search-small-input">
+                        <button class="burger__search-small-btn" aria-label="Поиск по сайту"></button>
+                    </form>
+                </nav>
+            </div> 
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__list_item">
+                        <a href="#about" class="nav__list_item-link"> 
+                            О компании
+                        </a>    
+                    </li>
+                    <li class="nav__list_item">
+                        <a href="#services" class="nav__list_item-link">
+                            Услуги
+                        </a>    
+                    </li>
+                    <li class="nav__list_item">
+                        <a href="#contacts" class="nav__list_item-link">
+                            Контакты
+                        </a>    
+                    </li>
+                </ul>
+                <form class="header__nav__form" action="#" aria-labelledby="site-search1">
+                    <input type="search" id="site-search1" name="search" class="nav__form_input">
+                    <button class="nav__form_search-btn" aria-label="Поиск по сайту"></button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero_section">
+            <div class="container">
+                <div class="hero_section__container">
+                    <h1 class="main_heading">
+                        Эффективное развитие вашего бизнеса
+                    </h1>
+                    <a href="#services" class="hero_section__services-link">Услуги</a>   
+                </div>
+            </div>
+        </section>
+        <section class="about_section" id="about">
+            <div class="container">
+                <h2 class="section_heading">
+                    О нас
+                </h2>
+                <p class="about_section__text">
+                    C 2005 года компания «Сальдогрупп» с успехом оказывает комплекс услуг, направленный на безупречное и высокоэффективное обслуживание бизнес интересов клиентов. Важнейшей сферой деятельности компании «Сальдогрупп» является бухгалтерский учет предприятия. Услуги компании включают в себя подготовку налогового и бухгалтерского учета, восстановление бухгалтерского учета, подготовку налоговой отчетности и многое другое. Специалисты нашей компании эффективно производят восстановление бухучета и налогового учета организаций и индивидуальных предпринимателей. «Сальдогрупп» не только подготавливает и восстанавливает бухгалтерский учет и отчет в налоговые органы; но также представляет интересы организации при проведении проверок налоговыми органами и внебюджетными фондами.
+                    Также важным направлением нашей деятельности является управленческое и налоговое консультирование: в частности, «Сальдогрупп» окажет помощь в подготовке налоговой отчетности и налоговых деклараций. Грамотное юридическое сопровождение, выполненное сотрудниками нашей компании, позволит избежать существующих правовых сложностей и вовремя предотвратить возникновение новых.
+                </p>
+            </div>
+        </section>
+        <section class="services_section" id="services">
+            <div class="container">
+                <div class="services_section-container">
+                    <h2 class="section_heading">
+                        Услуги
+                    </h2>
+                    <ul class="services__list accordion-container">
+                        <li class="services__list_item ac">
+                            <button class="services__list_item-btn ac-trigger" aria-label="Открыть список">
+                                Бухгалтерский учет
+                            </button>
+                            <div class="services__list_item__accordion_content ac-panel">
+                                <ol class="services__list_item__accordion_ol ac-text">
+                                    <li class="services__list_item__accordion_list_item">
+                                        Бухгалтерский и налоговый учет организаций и индивидуальных предпринимателей с подготовкой и предоставлением налоговой отчетности
+                                        <ul class="services__list_item__accordion_ul">
+                                            <li class="services__list_item__accordion_list_item">
+                                                Cкладской учет
+                                            </li>
+                                            <li class="services__list_item__accordion_list_item">
+                                                Учет основных средств, бухгалтерский и налоговый учет амортизационных отчислений
+                                            </li>
+                                            <li class="services__list_item__accordion_list_item">
+                                                Расчет заработной платы, отчетность в налоговые органы, в т.ч. по персонифицированному учету и дохода сотрудников
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Ведение отдельных участков бухгалтерии организаций и индивидуальных предпринимателей
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Подготовка и предоставление отчетности организаций и индивидуальных предпринимателей в налоговые органы, статуправление, внебюджетные фонды
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Подготовка и предоставление в налоговые органы ежегодных деклараций для физических лиц по форме 3-НДФЛ
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Восстановление бухгалтерского и налогового учета организаций и индивидуальных предпринимателей
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Постановка бухгалтерского и налогового учета организаций и индивидуальных предпринимателей
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка учетной политики
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Консультирование по вопросам бухгалтерского и налогового учета
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Подготовка мониторингов законодательства
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Расчет налоговой нагрузки по предлагаемым схемам сделок с клиентами
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Проведение инвентаризации с подготовкой документов о результатах инвентаризации
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Проведение сверок по расчетам с бюджетом организаций и индивидуальных предпринимателей с налоговыми органами и внебюджетными фондами
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Представление интересов организаций и индивидуальных предпринимателей при проведении проверок налоговыми органами и внебюджетными фондами
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Предоставление курьерских услуг по предоставлению отчетности в налоговые органы, статуправление, внебюджетные фонды
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Услуги по внесении изменений в Единый реестр при смене адреса местонахождения, смене генерального директора, изменения видов деятельности
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Услуги по получению выписки из Единого реестра
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="services__list_item ac">
+                            <button class="services__list_item-btn ac-trigger" aria-label="Открыть список">
+                                Налоговое консультирование
+                            </button>
+                            <div class="services__list_item__accordion_content ac-panel">
+                                <ol class="services__list_item__accordion_ol ac-text">
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка модели бизнеса с учетом налоговой нагрузки и возникающих налоговых рисков
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Консультирование по вопросам налогообложения, возникающим в ходе финансово-хозяйственной деятельности, с учетом требований гражданского, таможенного, валютного и трудового законодательства
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Предоставление экспертных письменных заключений по вопросам о налогах и сборах, подготовка правовых позиций по спорным вопросам налогообложения с учетом сложившейся судебной практики
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Консультирование по составлению налоговых деклараций
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Консультирование по вопросам применения международных соглашений об избегании двойного налогообложения
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Представление интересов клиента в ходе проверок налоговыми и иными контролирующими органами
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Обжалование решений налоговых инспекций в судах и вышестоящих органах
+                                    </li>
+                                </ol>
+                            </div>    
+                        </li> 
+                        <li class="services__list_item ac">
+                            <button class="services__list_item-btn ac-trigger" aria-label="Открыть список">
+                                Управленческое консультирование
+                            </button>
+                            <div class="services__list_item__accordion_content ac-panel">
+                                <ol class="services__list_item__accordion_ol ac-text">
+                                    <li class="services__list_item__accordion_list_item">
+                                        Стратегическое управление, включая корректировку и разработку миссии, целей, стратегии, политики, других документов, регламентирующих стратегию клиента
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Совершенствование организационной структуры, включая экспертизу системы управления, разработку и оптимизацию функциональной и организационной структуры, разработку нормативных документов по организационной структуре, проведение реструктуризации организации
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка и оптимизация бизнес-процессов
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Организация систем делопроизводства и документооборота
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Экспертиза финансового состояния предприятий
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка бизнес-планов и ТЭО
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка системы управления финансами, включая разработку форм внутренней финансовой отчетности, системы финансового мониторинга и контроля
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка и внедрение систем бюджетного планирования и контроля
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка мероприятий по финансовой реструктуризации, включая оптимизацию финансовых потоков, структуры активов и пр.
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Постановка управленческого учета
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка моделей функционирования предприятий в целях налогового планирования
+                                    </li>
+                                </ol>
+                            </div>    
+                        </li> 
+                        <li class="services__list_item ac">
+                            <button class="services__list_item-btn ac-trigger" aria-label="Открыть список">
+                                Юридические услуги
+                            </button>
+                            <div class="services__list_item__accordion_content ac-panel">
+                                <ol class="services__list_item__accordion_ol ac-text">
+                                    <li class="services__list_item__accordion_list_item">
+                                        Комплексное юридическое сопровождение бизнеса клиента от момента создания, включая разработку правовой структуры бизнеса, схем договорных отношений внутри структуры, постановку работы юридической службы, разработку пакетов типовых документов, разработку корпоративных документов, внутренних нормативно-правовых документов
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Замена корпоративного юриста клиента группой консультантов, осуществляющих устное и письменное консультирование по широкому кругу юридических вопросов, экспертизу договоров, управленческих и корпоративных документов
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Проведение Due Dilligence – экспертизы бизнеса на предмет наличия правовых рисков (в частности – рисков применения санкций к предприятиям бизнеса, признания незаконными совершенных сделок и принятых решений, принудительной ликвидации предприятий бизнеса, рисков предъявления к предприятиям бизнеса исковых требований со стороны третьих лиц и т.д.), вытекающих из процедур создания или функционирования бизнеса
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Представление и защита интересов клиента в государственных органах, в органах исполнительной власти, в арбитражном и гражданском судах, арбитражах и третейских судах, включая разработку правовой позиции для клиента и непосредственное участие наших консультантов в процессуальных действиях, переговорах, совещаниях и т.д.
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Представление интересов клиентов при проведении переговоров с российскими и иностранными контрагентами и оформлении сделок
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Международное налоговое планирование
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Сопровождение заключения хозяйственных сделок, включая разработку проектов договоров в интересах клиента, участие в переговорах с контрагентами, согласование условий сделки
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Письменное и устное юридическое консультирование по широкому кругу вопросов Российского законодательства, применительно к коммерческой деятельности клиента
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Мониторинг изменений действующего законодательства
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Правовая помощь при регистрации юридических лиц за рубежом, открытии представительств иностранных юридических лиц на территории Российской Федерации
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Правовая помощь при регистрации выпусков ценных бумаг, проспектов эмиссий в Федеральной Комиссии РФ по ценным бумагам
+                                    </li>
+                                </ol>
+                            </div>    
+                        </li>
+                        <li class="services__list_item ac">
+                            <button class="services__list_item-btn ac-trigger" aria-label="Открыть список">
+                                Сопровождение международных проектов
+                            </button>
+                            <div class="services__list_item__accordion_content ac-panel">
+                                <ol class="services__list_item__accordion_ol ac-text">
+                                    <li class="services__list_item__accordion_list_item">
+                                        Анализ потенциальной возможности привлечения иностранных инвесторов
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Разработка эффективной структуры собственности бизнеса, благоприятной для привлечения иностранных инвестиций
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Оказание поддержки при внедрении выработанных структур
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Анализ существующих отношений с иностранными компаниями с точки зрения налоговых последствий и применения практики соглашений об избежании двойного налогообложения
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Анализ и разработка договоров и соглашений с иностранными партнерами с учетом требований международного и внутренних законодательств
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Поддержка при образовании и постановке на учет постоянных представительств иностранных организаций в Российской Федерации
+                                    </li>
+                                    <li class="services__list_item__accordion_list_item">
+                                        Ведение учета и сдача отчетности представительств иностранных юридических лиц в Российской Федерации
+                                    </li>
+                                </ol>
+                            </div>    
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </section>
+    </main>
+    <aside class="circle_section">
+        <div class="container circle_section-container">
+            <h2 class="section_heading circle_section__heading">
+                16 лет<br>безупречной<br>репутации
+            </h2>
+            <p class="circle_section__text">
+                Развитие бизнеса клиента, правильное построение структуры собственности и управления, эффективный контроль и внедрение принятых решений - наша основная цель и главная задача. 
+                Стоимость услуг нашей компании определяется видом работы и сложностью того или иного юридического процесса. В целом экономия средств налицо, так как стоимость бухгалтерского обслуживания и других услуг у квалифицированных специалистов нашей компании ниже, чем Ваши возможные затраты на собственного штатного бухгалтера. А качество работы при этом на порядок выше.
+            </p>
+        </div>    
+    </aside>
+    <footer class="footer" id="contacts">
+        <div class="container footer_container">
+            <div class="footer__content_container">
+                <div class="footer__logo_container">
+                    <img class="footer__logo_img" src="img/saldogroup_logo.png" alt="Логотип Сальдогрупп">
+                    <p class="footer__logo_text">ООО Сальдогрупп</p>
+                </div>  
+                <h2 class="section_heading footer__section_heading">
+                    Давайте работать вместе
+                </h2>
+                <address class="footer__contacts">
+                    <div class="contacts_container">
+                        <a href="tel:+74959847678" class="footer__tel">+7 (495) 984-76-78</a>
+                        <a href="mailto:info@saldogroup.ru" class="footer__email"> info@saldogroup.ru</a>
+                    </div> 
+                    <p class="footer__address_text">
+                        113824
+                        Российская&nbsp;Федерация
+                        город&nbsp;Москва
+                        Дербеневская&nbsp;набережная
+                        дом&nbsp;7&nbsp;строение&nbsp;16
+                    </p>   
+                </address>   
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6216c9a9101a7148480cbe6e1d32d75406abc10b7be7d414a6795b0220281463&amp;source=constructor"></iframe>    
+            </div>    
+        </div>
+    </footer>
+    <span class="up_btn"><a>Наверх</a></span>
+</body>
+</html>

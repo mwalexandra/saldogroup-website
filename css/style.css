@@ -1,0 +1,187 @@
+/*
+Browsers: last 5 version
+*/
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-800 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+:root {
+    --color-white: #ffffff;
+    --color-grey: #f0f2f2;
+    --color-pink: #eab2b2;
+    --color-blue-logos: #05C7F2;
+    --color-lighter-blue: #05DBF2;
+    --color-green-blue: #026873;
+    --color-braun: #260801;
+    --color-black: #282828;
+
+}
+
+.en_lang {
+    display: none;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    line-height: 1;
+}
+
+section,
+aside {
+    margin-bottom: 5rem;
+}
+
+button, input {
+    font: inherit;
+}
+
+button:active,
+button:focus {
+    outline-color: var(--color-lighter-blue);
+    outline-width: 0.1rem;
+}
+
+button {
+    color: var(--color-braun);
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 0 5rem;
+}
+
+.section_heading {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.up_btn {
+    position: fixed;
+  	right: 20px;
+  	bottom: 20px;
+    padding: 40px;
+    color: var(--color-white);
+    background-color: var(--color-braun);
+    background-image: url('../img/up-arrow-hand-drawn-outline-svgrepo-com.svg');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+	  border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+  	-webkit-transition: all .3s ease-in-out;
+  	-o-transition: all .3s ease-in-out;
+  	transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 3rem;
+    }
+
+    .section_heading {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 831px) {
+    section,
+    aside {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    section,
+    aside {
+        margin-bottom: 3rem;
+    }
+}
